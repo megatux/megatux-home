@@ -15,9 +15,7 @@
     li == link_to 'Email', '', "id='email'"
 
 javascript:
-  $('body').get(0).onload = startup;
-
-  function startup(){
+  function onLoad() {
     target = $('#target');
     $('#viewclick').click(
       function(){
@@ -28,8 +26,8 @@ javascript:
           $("#target").append(html);
 
           try {
-              log('ga_serie');
-              ga('send', 'pageview', {'page': '/' + _platform + '/serie/' + _serie_c ,'title': _serie_c});
+              console.log('ga_serie');
+              ga('send', 'pageview', {'page': '/t2'});
           } catch (e) { }
 
         });
