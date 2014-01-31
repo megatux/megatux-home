@@ -6,6 +6,7 @@ html
     meta name="author" content=@author
     link href='http://fonts.googleapis.com/css?family=Roboto|Press+Start+2P' rel='stylesheet' type='text/css'
     link rel="stylesheet" href="css/styles.css"
+    script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"
   body onLoad="onLoad()"
     wrapper
       header
@@ -17,4 +18,5 @@ html
         == yield
     footer
       p
-        | Copyright © #{Time.now.year}, #{@author}
+        small
+          | Copyright © #{Time.now.year}, #{author_name}

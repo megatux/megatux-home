@@ -1,0 +1,39 @@
+#english
+  h2 test
+  p#target
+    | bla blah
+    | 2600. akjdsf;kajd adsf;
+    | adsf asdf asdf
+  button.ybutton#viewclick View 
+    
+
+  h3 Contact
+  ul.contacts
+    li == link_to 'FB', 'https://www.facebook.com/megatux'
+    li == link_to 'Twitter: @megatux', 'https://twitter.com/megatux'
+    li == link_to 'Google+', 'https://plus.google.com/110380733504439935450'
+    li == link_to 'Email', '', "id='email'"
+
+javascript:
+  $('body').get(0).onload = startup;
+
+  function startup(){
+    target = $('#target');
+    $('#viewclick').click(
+      function(){
+        $.ajax({
+          url: "/t2",
+           cache: false
+        }).done(function( html ) {
+          $("#target").append(html);
+
+          try {
+              log('ga_serie');
+              ga('send', 'pageview', {'page': '/' + _platform + '/serie/' + _serie_c ,'title': _serie_c});
+          } catch (e) { }
+
+        });
+        return false;
+      }
+    );
+  }

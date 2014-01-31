@@ -15,11 +15,22 @@ class Home < Sinatra::Base
     def link_to(body, url, options='')
       '<a href="%s" %s>%s</a>' % [url, options, body]
     end
+
+    def author_name
+      'Cristian Molina'
+    end
   end
 
   get '/' do
-    @author = 'Cristian Molina'
     slim :index
+  end
+
+  get '/t' do
+    slim :t1
+  end
+
+  get '/t2' do
+    slim :t2, :layout => false
   end
 
   # Start the server if ruby file executed directly.
