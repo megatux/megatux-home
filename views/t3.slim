@@ -1,0 +1,14 @@
+javascript:
+  function onLoad() {
+    $('body').html(
+        'Tamaño de pantalla: ' +
+        window.screen.width + ' x ' +
+        window.screen.height +
+        ' ---------- Avail: ' +
+        window.screen.availWidth + ' x ' +
+        window.screen.availHeight +
+        ' ---------- color & pixel depth: ' +
+        window.screen.colorDepth +
+        window.screen.pixelDepth
+    );
+  }
