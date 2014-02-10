@@ -37,6 +37,14 @@ class Home < Sinatra::Base
     slim :t3
   end
 
+  get '/t4' do
+    slim :t4
+  end
+
+  get '/t5' do
+    slim :t5
+  end
+
   # Start the server if ruby file executed directly.
   run! if app_file == $0
 end
