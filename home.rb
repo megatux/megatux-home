@@ -33,16 +33,8 @@ class Home < Sinatra::Base
     slim :t2, :layout => false
   end
 
-  get '/t3' do
-    slim :t3
-  end
-
-  get '/t4' do
-    slim :t4
-  end
-
-  get '/t5' do
-    slim :t5
+  get /\/(t[1-9]+)/ do |file|
+    slim file.to_sym
   end
 
   # Start the server if ruby file executed directly.
