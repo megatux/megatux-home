@@ -67,3 +67,7 @@ header h1, #content {
   text-decoration: none;
   background-color: #ebefa1;
 }
+
+#content p.about_me a {
+  padding: 3pt;
+}
