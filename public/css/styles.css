@@ -37,7 +37,7 @@ footer p {
 }
 
 #content, footer, h1 {
-  border: 1px solid #333;
+  border-top: 1px solid #333;
 }
 
 header, #content, footer {
