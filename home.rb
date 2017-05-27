@@ -25,18 +25,6 @@ class Home < Sinatra::Base
     slim :index
   end
 
-  get '/t' do
-    slim :t1
-  end
-
-  get '/t2' do
-    slim :t2, :layout => false
-  end
-
-  get /\/(t[1-9]+)/ do |file|
-    slim file.to_sym
-  end
-
   # Start the server if ruby file executed directly.
   run! if app_file == $0
 end
