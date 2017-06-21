@@ -21,11 +21,11 @@
   h3 Contact Links
   ul.contacts
     li == link_to 'Email', '', "id='email'"
-    li == link_to 'Twitter: @megatux', 'https://twitter.com/megatux'
-    li == link_to 'FB', 'https://www.facebook.com/megatux'
-    li == link_to 'Google+', 'https://plus.google.com/110380733504439935450'
-    li == link_to 'GitHub', 'https://github.com/megatux/'
-    li == link_to 'StackOverflow', 'http://stackoverflow.com/users/21087/megatux'
+    li == link_to 'Facebook', 'https://www.facebook.com/megatux'
+    li == link_to '<img src="https://stackoverflow.com/users/flair/21087.png" width="208" height="58" alt="profile for MegaTux at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for MegaTux at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></img>', 'http://stackoverflow.com/users/21087/megatux'
+    li == link_to 'Twitter: @megatux', 'https://twitter.com/megatux', "class='twitter-follow-button'"
+    li == link_to 'Follow @megatux', 'https://github.com/megatux', 'aria-label="Follow @megatux on GitHub" class="github-button"'
+    li:div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/u/0/110380733504439935450" data-rel="publisher"
 
 javascript:
   function onLoad() {

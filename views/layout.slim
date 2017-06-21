@@ -8,6 +8,9 @@ html
     link rel="stylesheet" href="css/styles.css"
     script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"
     script src="http://jwpsrv.com/library/yLlGyo2aEeOx+iIACmOLpg.js"
+    script{defer async src="https://buttons.github.io/buttons.js"}
+    script{async defer src="https://apis.google.com/js/platform.js"}
+
     css:
       @media(min-width: 1000px) {
         body {
@@ -51,3 +54,19 @@ html
       | })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       | ga('create', 'UA-57989107-1', 'auto');
       | ga('send', 'pageview');
+      | window.twttr = (function(d, s, id) {
+      |  var js, fjs = d.getElementsByTagName(s)[0],
+      |    t = window.twttr || {};
+      |  if (d.getElementById(id)) return t;
+      |  js = d.createElement(s);
+      |  js.id = id;
+      |  js.src = "https://platform.twitter.com/widgets.js";
+      |  fjs.parentNode.insertBefore(js, fjs);
+      |
+      |  t._e = [];
+      |  t.ready = function(f) {
+      |    t._e.push(f);
+      |  };
+      |
+      |  return t;
+      | }(document, "script", "twitter-wjs"));
