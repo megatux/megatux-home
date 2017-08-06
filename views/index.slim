@@ -15,8 +15,13 @@
     == link_to 'Linux', 'https://en.wikipedia.org/wiki/Linux'
     |  advocate, Cristian enjoys digging into the
     | deeper technical aspects of programming languages and operating systems.
-    br
-    | When he is not with family, he is training for his next ultra trail race.
+  
+  p.other
+    | Other passion he has is running. Most of his free time he's planing and training for his next ultra trail race.
+  p.other
+    | He is also a
+    ==<> link_to 'vegan&hearts;', 'https://en.wikipedia.org/wiki/Veganism'
+    | and a cat lover &hearts;.
 
   h3 Contact Links
   ul.contacts
@@ -29,6 +34,6 @@
 
 javascript:
   function onLoad() {
-    var a = 'gmail.com', b = 'megatux@';
-    document.getElementById("email").href = "mailto:" + b + a;
+    var a = 'mail.com', b = 'megatux';
+    document.getElementById("email").href = "mailto:" + b + '@' + 'g' + a;
   }
